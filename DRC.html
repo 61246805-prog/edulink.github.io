@@ -8,7 +8,7 @@
 
     
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
-    
+
     <style>
         body {
             margin: 0;
@@ -41,16 +41,11 @@
             font-size: 20px;
             margin-top: 10px;
         }
-       nav {
+        nav {
             background: #4fb1b9;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            transition: all 0.3s ease;
+            justify-content: center;
+            padding: 10px;
         }
         nav a {
             color: white;
@@ -59,27 +54,6 @@
             font-weight: 600;
         }
         nav a:hover {
-            text-decoration: underline;
-        }
-        .nav-logo {
-            opacity: 0;
-            transform: translateX(-20px);
-            transition: all 0.3s ease;
-        }
-        nav.scrolled .nav-logo {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        .nav-logo img {
-            height: 40px;
-        }
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-        }
-        .nav-links a:hover {
             text-decoration: underline;
         }
         section {
@@ -198,12 +172,9 @@
         <div class="logo">
             <img src="img/logo.png" alt="Logo EDULINK">
         </div>
-        <h1>Mantenimiento de Recursos Informáticos</h1>
+        <h1>Diseño de Recursos de Comunicación</h1>
     </header>
-    <nav id="navbar">
-        <div class="nav-logo">
-            <img src="img/logo.png" alt="Logo EDULINK">
-        </div>
+    <nav>
         <a href="index.html">Inicio</a>
         <a href="ARQUI.html">Arquitectura de Plataformas y STI</a>
         <a href="enfermeria.html">Enfermería</a>
