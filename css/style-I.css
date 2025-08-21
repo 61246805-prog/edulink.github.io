@@ -1,0 +1,126 @@
+  
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f7f7f7;
+            color: #212121;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/portada.jpg') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 250px 20px;
+        }
+        header .logo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        
+        header .logo img {
+                height: 60px;
+        }
+        header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 60px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        nav {
+            background: #4fb1b9;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .banner-section {
+            background: url('img/banner.png') no-repeat center/cover;
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        footer {
+            background-color: #000;   /* Fondo negro */
+            color: #fff;              /* Texto blanco */
+            text-align: center;       /* Centrar el texto */
+            padding: 20px;            /* Espaciado interno */
+            font-size: 14px;          /* Tamaño del texto */
+        }
+        
+        nav {
+                background: #4fb1b9;
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .Botones {
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: block;
+            background: #4fb1b9;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            width: 260px;
+            text-align: center;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #3a8a90;
+            transform: scale(1.05);
+        }
+        footer {
+            background: #212121;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }

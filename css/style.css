@@ -1,0 +1,158 @@
+/* 🔹 Configuración general */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f7f7f7;
+  color: #212121;
+}
+
+/* 🔹 Encabezado */
+header {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/portada.jpg') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 285px 20px;
+  position: relative;
+}
+header .logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+header .logo img {
+  height: 60px;
+}
+header h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  margin: 0;
+  text-transform: uppercase;
+}
+header p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* 🔹 Menú sticky */
+nav {
+  background: #4fb1b9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+.nav-logo {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease;
+}
+nav.scrolled .nav-logo {
+  opacity: 1;
+  transform: translateX(0);
+}
+.nav-logo img {
+  height: 40px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+/* Separadores automáticos */
+.nav-links a + a::before {
+  content: "|";
+  margin: 0 10px;
+  color: white;
+}
+
+/* 🔹 Secciones */
+.seccion {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: white;
+}
+.seccion .contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  gap: 40px;
+}
+.seccion .texto {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+.seccion .texto h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.seccion .texto p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.seccion .imagen {
+  flex: 1;
+}
+.seccion .imagen img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* 🔹 Botones */
+.btn {
+  display: inline-block;
+  background: #4fb1b9;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: background 0.3s, transform 0.2s;
+}
+.btn:hover {
+  background: #3a8a90;
+  transform: scale(1.05);
+}
+
+/* 🔹 Zigzag */
+.seccion.invertida .contenido {
+  flex-direction: row-reverse;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
+  .seccion .contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+  .seccion.invertida .contenido {
+    flex-direction: column;
+  }
+}
+
+/* 🔹 Footer */
+footer {
+  background: #212121;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
