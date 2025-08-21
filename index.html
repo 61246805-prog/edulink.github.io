@@ -11,119 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
 
   <!-- Estilos principales -->
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f7f7f7;
-      color: #212121;
-    }
-    header {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/portada.jpg') no-repeat center/cover;
-      color: white;
-      text-align: center;
-      padding: 250px 20px;
-    }
-    header .logo {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-    }
-    
-    header .logo img {
-      height: 60px;
-    }
-    header h1 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 60px;
-      margin: 0;
-      text-transform: uppercase;
-    }
-    header p {
-      font-size: 20px;
-      margin-top: 10px;
-    }
-    nav {
-      background: #4fb1b9;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 36px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    section p {
-      font-size: 18px;
-      line-height: 1.6;
-      text-align: center;
-    }
-    .banner-section {
-      background: url('img/banner.png') no-repeat center/cover;
-      color: black;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    footer {
-      background-color: #000;   /* Fondo negro */
-      color: #fff;              /* Texto blanco */
-      text-align: center;       /* Centrar el texto */
-      padding: 20px;            /* Espaciado interno */
-      font-size: 14px;          /* Tamaño del texto */
-}
-
-
-    /* 🔹 ESTILOS PARA LOS BOTONES */
-    .Botones {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-      margin-top: 30px;
-    }
-
-    .btn {
-      display: block;
-      background: #4fb1b9;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      width: 260px;
-      text-align: center;
-      transition: background 0.3s, transform 0.2s;
-    }
-
-    .btn:hover {
-      background: #3a8a90;
-      transform: scale(1.05);
-    }
-    footer {
-      background: #212121;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-  </style>
+   <link rel="stylesheet" href="css/style.css">
 
   <!-- Librería de animaciones -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -140,54 +28,66 @@
   </header>
 
   <!-- Menú -->
-  <nav>
-    <a href="index.html">Inicio</a> |
-    <a href="arquitectura.html">Arquitectura de Plataformas y STI</a> |
-    <a href="enfermeria.html">Enfermería</a> |
-    <a href="contabilidad.html">Contabilidad</a> 
+  <nav id="navbar">
+    <div class="nav-logo">
+      <img src="img/logo.png" alt="Logo EDULINK">
+    </div>
+    <div class="nav-links">
+      <a href="#arquitectura">Arquitectura de Plataformas y STI</a>
+      <a href="#enfermeria">Enfermería</a>
+      <a href="#contabilidad">Contabilidad</a>
+    </div>
   </nav>
 
-  <!-- Secciones principales -->
-  <section id="arquitectura" data-aos="fade-up">
-    <h2>Arquitectura de Plataformas y STI</h2>
-    
-    <div class="Botones">
-      <a href="ARQUI.html" class="btn">VER PERIODOS</a>
-    </div>
-      
-  </section>
-
-  <section id="enfermeria" data-aos="fade-up" class="banner-section">
-    <h2>Enfermería</h2>
-    <p>Programa orientado a la formación de profesionales en el área de la salud con conocimientos prácticos y éticos.</p>
-     <div class="Botones">
-    <a href="arquitectura.html" class="btn">I Periodo Académico</a> 
-      <a href="arquitectura.html" class="btn">II Periodo Académico</a>
-      <a href="arquitectura.html" class="btn">III Periodo Académico</a>
-      <a href="arquitectura.html" class="btn">IV Periodo Académico</a>
-      <a href="arquitectura.html" class="btn">V Periodo Académico</a>
-      <a href="arquitectura.html" class="btn">VI Periodo Académico</a>
+  <!-- Sección Arquitectura -->
+  <section id="arquitectura" class="seccion" style="background-image: url('img/fondo1.jpg');" data-aos="fade-up">
+    <div class="contenido">
+      <div class="texto">
+        <h2>Arquitectura de Plataformas y STI</h2>
+        <p>Formación en el diseño, implementación y gestión de plataformas tecnológicas, con énfasis en sistemas de información.</p>
+        <a href="ARQUI.html" class="btn">Ver periodos</a>
+      </div>
+      <div class="imagen">
+        <img src="img/arquitectura.jpg" alt="Arquitectura de plataformas">
+      </div>
     </div>
   </section>
 
-  <section id="contabilidad" data-aos="fade-up">
-    <h2>Contabilidad</h2>
-    <p>Enfoque en gestión financiera, administración y toma de decisiones económicas.</p>
-     <div class="Botones">
-    <a href="arquitectura.html" class="btn">I Periodo Académico</a> 
-      <a href="arquitectura.html" class="btn">II Periodo Académico</a>
-      <a href="arquitectura.html" class="btn">III Periodo Académico</a>
-      <a href="arquitectura.html" class="btn">IV Periodo Académico</a>
-      <a href="arquitectura.html" class="btn">V Periodo Académico</a>
-      <a href="arquitectura.html" class="btn">VI Periodo Académico</a>
+  <!-- Sección Enfermería -->
+  <section id="enfermeria" class="seccion invertida" style="background-image: url('img/fondo2.jpg');" data-aos="fade-up">
+    <div class="contenido">
+      <div class="imagen">
+        <img src="img/enfermeria.jpg" alt="Enfermería">
+      </div>
+      <div class="texto">
+        <h2>Enfermería</h2>
+        <p>Programa orientado a la formación de profesionales en el área de la salud con conocimientos prácticos y éticos.</p>
+        <a href="enfermeria.html" class="btn">Ver periodos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contabilidad -->
+  <section id="contabilidad" class="seccion" style="background-image: url('img/fondo3.jpg');" data-aos="fade-up">
+    <div class="contenido">
+      <div class="texto">
+        <h2>Contabilidad</h2>
+        <p>Enfoque en gestión financiera, administración y toma de decisiones económicas.</p>
+        <a href="contabilidad.html" class="btn">Ver periodos</a>
+      </div>
+      <div class="imagen">
+        <img src="img/contabilidad.jpg" alt="Contabilidad">
+      </div>
     </div>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" data-aos="zoom-in">
+  <section id="contacto" data-aos="zoom-in" style="padding: 60px 20px; text-align:center;">
     <h2>Sigamos en contacto</h2>
     <p>
-      <a href="https://web.facebook.com/istelaredo.trujillo.7/?locale=es_LA&_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://iestp-laredo.edu.pe/portal/" target="_blank" rel="noopener noreferrer">IESTP-LAREDO</a> | <a href="#">Correo</a>
+      <a href="https://web.facebook.com/istelaredo.trujillo.7/?locale=es_LA&_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer">Facebook</a> | 
+      <a href="https://iestp-laredo.edu.pe/portal/" target="_blank" rel="noopener noreferrer">IESTP-LAREDO</a> | 
+      <a href="#">Correo</a>
     </p>
   </section>
 
@@ -201,6 +101,16 @@
   <script>
     AOS.init({
       duration: 1200,
+    });
+  </script>
+  <script>
+    window.addEventListener("scroll", function() {
+      const nav = document.getElementById("navbar");
+      if (window.scrollY > 50) { // 🔹 aparece antes
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
     });
   </script>
 </body>
