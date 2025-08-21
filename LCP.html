@@ -8,7 +8,7 @@
 
     
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
-
+    
     <style>
         body {
             margin: 0;
@@ -41,11 +41,16 @@
             font-size: 20px;
             margin-top: 10px;
         }
-        nav {
+       nav {
             background: #4fb1b9;
             display: flex;
-            justify-content: center;
-            padding: 10px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
         }
         nav a {
             color: white;
@@ -54,6 +59,27 @@
             font-weight: 600;
         }
         nav a:hover {
+            text-decoration: underline;
+        }
+        .nav-logo {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.3s ease;
+        }
+        nav.scrolled .nav-logo {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .nav-logo img {
+            height: 40px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        .nav-links a:hover {
             text-decoration: underline;
         }
         section {
@@ -80,13 +106,30 @@
             padding: 100px 20px;
         }
         footer {
-            background-color: #000;   /* Fondo negro */
-            color: #fff;              /* Texto blanco */
+            background-color: #212121;   /* Fondo negro */
+            color: #ffffff;              /* Texto blanco */
             text-align: center;       /* Centrar el texto */
             padding: 20px;            /* Espaciado interno */
             font-size: 14px;          /* Tamaño del texto */
         }
         
+        .videos {
+                padding: 40px 20px;
+                text-align: center;
+        }
+
+        .videos h2 {
+                font-family: 'Oswald', sans-serif;
+                font-size: 32px;
+                margin-bottom: 20px;
+        }
+
+        .video-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 10px;
+                justify-items: center;
+        }
         nav {
                 background: #4fb1b9;
                 display: flex;
@@ -135,6 +178,18 @@
             padding: 20px;
             font-size: 14px;
         }
+        .img-boton {
+            width: 350px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+
+        .img-boton:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
     </style>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -143,41 +198,54 @@
         <div class="logo">
             <img src="img/pegatina.png" alt="logo EDULINK">
         </div>
-        <h1>VI PERIODO ACADÉMICO</h1>
+        <h1>Sistemas Operativos</h1>
     </header>
-    <nav>
+    <nav id="navbar">
+        <div class="nav-logo">
+            <img src="img/pegatina.png" alt="logo EDULINK">
+        </div>
         <a href="index.html">Inicio</a>
         <a href="ARQUI.html">Arquitectura de Plataformas y STI</a>
         <a href="enfermeria.html">Enfermería</a>
         <a href="contabilidad.html">Contabilidad</a>
     </nav>
     <section id="videos">
-        <h2>UNIDADES DIDÁCTICAS</h2>
-        <div class="Botones">
-            <a href="ADSI.html" class="btn">Análisis y Diseño de Sistemas  de Información</a> 
-            <a href="DBD.html" class="btn">Diseño de Base de Datos</a> 
-            <a href="LCP.html" class="btn">Lógica Computacional</a> 
-            <a href="CSG.html" class="btn">Ciberseguridad</a> 
+        <h2>RECURSOS</h2>
+        <div class="video-grid">
+
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/iwB3z8PJMlg" 
+                title="Video 1" frameborder="0" allowfullscreen></iframe>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/fsuroRYmagw" 
+                title="Video 2" frameborder="0" allowfullscreen></iframe>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/6e5og3KLcE4" 
+                title="Video 3" frameborder="0" allowfullscreen></iframe>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/666Pc5Yp5hM" 
+                title="Video 4" frameborder="0" allowfullscreen></iframe>
+            <a href="https://cibertest.com/examen-online/511/sistema-operativo"
+                target="_blank" rel="noopener noreferrer">
+                <img src="img/os.png" alt="Artículo ESAN" class="img-boton">
+            </a>
+            <a href="https://es.educaplay.com/recursos-educativos/2337521-sistemas_operativos.html"
+                target="_blank" rel="noopener noreferrer">
+                <img src="img/os2.png" alt="Artículo ESAN" class="img-boton">
+            </a>
         </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-        duration: 1200,
-        });
-    </script>
     </section>
     <section id="contacto" data-aos="zoom-in">
         <h2>Sigamos en contacto</h2>
         <p>
-        <a href="https://web.facebook.com/istelaredo.trujillo.7/?locale=es_LA&_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://iestp-laredo.edu.pe/portal/" target="_blank" rel="noopener noreferrer">IESTP-LAREDO</a> | <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">Correo Institucional</a>
-    </p>
+        <a href="https://web.facebook.com/istelaredo.trujillo.7/?locale=es_LA&_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://iestp-laredo.edu.pe/portal/" target="_blank" rel="noopener noreferrer">IESTP-LAREDO</a> | <a href="#">Correo</a>
+        </p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>Todos los derechos reservados IESTP 2025</p>
-  </footer>
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+    <footer>
+        <p>Todos los derechos reservados IESTP 2025</p>
+    </footer>
 </body>
 </html>

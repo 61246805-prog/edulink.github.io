@@ -7,23 +7,177 @@
     <link rel="icon" href="img/logo.png" type="image/png">
 
     
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
 
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f7f7f7;
+            color: #212121;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/portada.jpg') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 250px 20px;
+        }
+        header .logo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        
+        header .logo img {
+                height: 60px;
+        }
+        header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 60px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        nav {
+            background: #4fb1b9;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .banner-section {
+            background: url('img/banner.png') no-repeat center/cover;
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        footer {
+            background-color: #000;   /* Fondo negro */
+            color: #fff;              /* Texto blanco */
+            text-align: center;       /* Centrar el texto */
+            padding: 20px;            /* Espaciado interno */
+            font-size: 14px;          /* Tamaño del texto */
+        }
+        
+        nav {
+                background: #4fb1b9;
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
 
+        .Botones {
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: block;
+            background: #4fb1b9;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            width: 260px;
+            text-align: center;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #3a8a90;
+            transform: scale(1.05);
+        }
+        footer {
+            background: #212121;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header data-aos="fade-down">
         <div class="logo">
-            <img src="img/logo.jpg" alt="Logo EDULINK">
+            <img src="img/pegatina.png" alt="logo EDULINK">
         </div>
         <h1>IV PERIODO ACADÉMICO</h1>
     </header>
     <nav>
         <a href="index.html">Inicio</a>
-        <a href="arquitectura.html">Arquitectura de Plataformas y STI</a>
+        <a href="ARQUI.html">Arquitectura de Plataformas y STI</a>
         <a href="enfermeria.html">Enfermería</a>
         <a href="contabilidad.html">Contabilidad</a>
     </nav>
-  
+    <section id="videos">
+        <h2>UNIDADES DIDÁCTICAS</h2>
+        <div class="Botones">
+            <a href="ADSI.html" class="btn">Análisis y Diseño de Sistemas  de Información</a> 
+            <a href="DBD.html" class="btn">Diseño de Base de Datos</a> 
+            <a href="LCP.html" class="btn">Lógica Computacional</a> 
+            <a href="CSG.html" class="btn">Ciberseguridad</a> 
+        </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 1200,
+        });
+    </script>
+    </section>
+    <section id="contacto" data-aos="zoom-in">
+        <h2>Sigamos en contacto</h2>
+        <p>
+        <a href="https://web.facebook.com/istelaredo.trujillo.7/?locale=es_LA&_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://iestp-laredo.edu.pe/portal/" target="_blank" rel="noopener noreferrer">IESTP-LAREDO</a> | <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">Correo Institucional</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Todos los derechos reservados IESTP 2025</p>
+  </footer>
+
+
 </body>
 </html>
