@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitectura de Plataformas y STI</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- Estilos principales (mismos que index.html) -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f7f7f7;
+      color: #212121;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/banner.png') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header .logo {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+    
+    header .logo img {
+      height: 60px;
+    }
+    header h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 48px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    nav {
+      background: #4fb1b9;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 32px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    section p, section li {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    footer {
+      background: #212121;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+
+  <!-- Librería de animaciones -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header data-aos="fade-down">
+     <div class="logo">
+      <img src="img/logo.png" alt="logo EDULINK">
+    </div>
+    <h1>Arquitectura de Plataformas y STI</h1>
+  </header>
+
+  <!-- Menú -->
+  <nav>
+    <a href="index.html">Inicio</a> |
+    <a href="arquitectura.html">Arquitectura de Plataformas y STI</a> |
+    <a href="enfermeria.html">Enfermería</a> |
+    <a href="contabilidad.html">Contabilidad</a> 
+  </nav>
+
+  <!-- Contenido -->
+  <section data-aos="fade-up">
+    <h2>Presentación</h2>
+    <p>Este programa académico se enfoca en el diseño, implementación y gestión de plataformas tecnológicas, con especial atención en la seguridad informática.</p>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Plan Académico</h2>
+    <ul>
+      <li>I Periodo Académico: Fundamentos de Tecnologías de la Información</li>
+      <li>II Periodo Académico: Redes, Servidores y Virtualización</li>
+      <li>III Periodo Académico: Ciberseguridad y Defensa de Sistemas</li>
+    </ul>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Ciberseguridad</h2>
+    <p>La ciberseguridad es un eje transversal del programa, abarcando desde conceptos básicos hasta metodologías avanzadas de defensa y análisis forense digital.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Todos los derechos reservados IESTP 2025</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
+</body>
+</html>

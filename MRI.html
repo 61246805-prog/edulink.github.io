@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDULINK</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f7f7f7;
+            color: #212121;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/portada.jpg') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 250px 20px;
+        }
+        header .logo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        
+        header .logo img {
+                height: 60px;
+        }
+        header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 60px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        nav {
+            background: #4fb1b9;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        section p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .banner-section {
+            background: url('img/banner.png') no-repeat center/cover;
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        footer {
+            background-color: #212121;   /* Fondo negro */
+            color: #ffffff;              /* Texto blanco */
+            text-align: center;       /* Centrar el texto */
+            padding: 20px;            /* Espaciado interno */
+            font-size: 14px;          /* Tamaño del texto */
+        }
+        
+        .videos {
+                padding: 40px 20px;
+                text-align: center;
+        }
+
+        .videos h2 {
+                font-family: 'Oswald', sans-serif;
+                font-size: 32px;
+                margin-bottom: 20px;
+        }
+
+        .video-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 10px;
+                justify-items: center;
+        }
+        nav {
+                background: #4fb1b9;
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .Botones {
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: block;
+            background: #4fb1b9;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            width: 260px;
+            text-align: center;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #3a8a90;
+            transform: scale(1.05);
+        }
+        footer {
+            background: #212121;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .img-boton {
+            width: 350px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+
+        .img-boton:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header data-aos="fade-down">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo EDULINK">
+        </div>
+        <h1>Mantenimiento de Recursos Informáticos</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="arquitectura.html">Arquitectura de Plataformas y STI</a>
+        <a href="enfermeria.html">Enfermería</a>
+        <a href="contabilidad.html">Contabilidad</a>
+    </nav>
+    <section id="videos">
+        <h2>RECURSOS</h2>
+        <div class="video-grid">
+
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/3G8yJaudGC0" 
+                title="Video 1" frameborder="0" allowfullscreen></iframe>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/c7wAz9w4urY" 
+                title="Video 2" frameborder="0" allowfullscreen></iframe>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/VIDEO_ID_3" 
+                title="Video 3" frameborder="0" allowfullscreen></iframe>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/VIDEO_ID_3" 
+                title="Video 4" frameborder="0" allowfullscreen></iframe>
+            <a href="https://www.esan.edu.pe/conexion-esan/ciberseguridad-en-el-peru-que-se-hace-desde-el-estado-para-combatirla"
+                target="_blank" rel="noopener noreferrer">
+                <img src="img/leer.png" alt="Artículo ESAN" class="img-boton">
+            </a>
+            <a href="https://www.incibe.es/ciudadania/formacion/autoevaluacion"
+                target="_blank" rel="noopener noreferrer">
+                <img src="img/leer2.png" alt="Artículo ESAN" class="img-boton">
+            </a>
+        </div>
+    </section>
+    <section id="contacto" data-aos="zoom-in">
+        <h2>Sigamos en contacto</h2>
+        <p>
+        <a href="https://web.facebook.com/istelaredo.trujillo.7/?locale=es_LA&_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://iestp-laredo.edu.pe/portal/" target="_blank" rel="noopener noreferrer">IESTP-LAREDO</a> | <a href="#">Correo</a>
+        </p>
+  </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+    <footer>
+        <p>Todos los derechos reservados IESTP 2025</p>
+    </footer>
+</body>
+</html>
